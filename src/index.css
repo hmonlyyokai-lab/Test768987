@@ -1,0 +1,64 @@
+@import "tailwindcss";
+
+@theme {
+  --font-fredoka: 'Fredoka', cursive, sans-serif;
+  --font-pacifico: 'Pacifico', cursive, sans-serif;
+  --font-quicksand: 'Quicksand', sans-serif;
+}
+
+.font-fredoka {
+  font-family: 'Fredoka', cursive, sans-serif;
+}
+
+.font-pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+.font-quicksand {
+  font-family: 'Quicksand', sans-serif;
+}
+
+/* Custom glow animations for Aadhya's birthday glowing typography */
+@keyframes celestialGlow {
+  0%, 100% {
+    text-shadow: 0 0 15px rgba(255, 105, 180, 0.9), 0 0 30px rgba(255, 182, 193, 0.8), 0 0 45px rgba(255, 215, 0, 0.6);
+    filter: drop-shadow(0 0 12px rgba(255, 105, 180, 0.8));
+    transform: translateY(0px) scale(1);
+  }
+  50% {
+    text-shadow: 0 0 25px rgba(255, 105, 180, 1), 0 0 50px rgba(255, 182, 193, 0.95), 0 0 70px rgba(255, 215, 0, 0.8);
+    filter: drop-shadow(0 0 20px rgba(255, 105, 180, 1));
+    transform: translateY(-4px) scale(1.02);
+  }
+}
+
+/* Pure white glowing text for "happy birthday aadhya" */
+@keyframes whiteGlowPulse {
+  0% {
+    text-shadow: 
+      0 0 8px rgba(255, 255, 255, 0.9),
+      0 0 18px rgba(255, 255, 255, 0.75),
+      0 0 32px rgba(255, 255, 255, 0.55);
+    opacity: 0.95;
+    transform: translateY(0px);
+  }
+  100% {
+    text-shadow: 
+      0 0 12px rgba(255, 255, 255, 1),
+      0 0 25px rgba(255, 255, 255, 0.95),
+      0 0 45px rgba(255, 255, 255, 0.8),
+      0 0 65px rgba(255, 255, 255, 0.6);
+    opacity: 1;
+    transform: translateY(-2px);
+  }
+}
+
+.white-glow-text {
+  color: #ffffff;
+  animation: whiteGlowPulse 2.8s ease-in-out infinite alternate;
+}
+
+/* Touch action prevent accidental browser gestures */
+canvas {
+  touch-action: none;
+}

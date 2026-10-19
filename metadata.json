@@ -1,0 +1,6 @@
+{
+  "name": "Aadhya's Magical Birthday Celebration",
+  "description": "An enchanting pastel birthday celebration app for Aadhya featuring an interactive cinematic fireworks show with glowing birthday banner and a star constellation maker with 🌟 and ⭐ emojis.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
